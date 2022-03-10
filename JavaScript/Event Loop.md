@@ -4,7 +4,7 @@ Event Loop是javascript的运行机制，也叫事件循环机制，决定了JS�
 
 由于javascript是单线程的，也就是说同一时刻，javascript主线程上只能执行一个任务,其他任务则需要排队等待。Event Loop机制就决定了这些任务的执行顺序。
 
-<img title="" src="file:///C:/Users/BO/workspace/local/DOC/images/EventLoop.png" alt="EventLoop.png" style="zoom:20%;">
+<img title="" src="../images/EventLoop.png" alt="EventLoop.png" style="zoom:20%;">
 
 如上图，JS在运行时先将所有同步任务放入执行栈（Call Stack)，同步任务由上往下顺序执行，且只有上一个任务执行完毕，才会执行下一个任务。同时程序中所有异步任务会根据任务类型放入不同的队列中。
 
